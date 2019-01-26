@@ -1,4 +1,4 @@
-FROM registry:2
+FROM registry:2.7.1
 
 RUN apk add --update \
     bash \
