@@ -12,6 +12,7 @@ This is a Docker Registry with automatic cleanup of orphaned resources to avoid 
 
 * This container supports the same configurations as the official 'registry:2' Docker container
 
+* See more at https://docs.docker.com/registry/garbage-collection/
 
 # Usage
 
