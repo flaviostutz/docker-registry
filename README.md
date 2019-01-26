@@ -16,6 +16,7 @@ This is a Docker Registry with automatic cleanup of orphaned resources to avoid 
 # Usage
 
 * create docker-compose.yml
+
 ```yml
 version: '3.5'
 
@@ -36,6 +37,7 @@ volumes:
 ```
 
 * run
+
 ```
 docker-compose up
 ```
