@@ -1,0 +1,21 @@
+version: '3.5'
+
+services:
+
+  registry:
+    build: .
+    image: flaviostutz/docker-registry
+    ports:
+      - 5000:5000
+    volumes:
+      - registry:/var/lib/registry
+    environment:
+      - CLEANUP_CRON=* * * * *
+
+  sample:
+    build: .
+    image: localhost:5000/flaviostutz/docker-registry:latest
+
+volumes:
+  registry:
+
